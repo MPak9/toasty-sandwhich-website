@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+import { BrowserRouter, Routes, Route, Outlet, ScrollRestoration } from 'react-router-dom';
 import './App.css';
+import ScrollToTop from './Hooks/ScrollToTop';
+import Toasty_Layout from './Components/Toasty_Layout';
+import Toasty_Home from './Components/Toasty_Home';
+import Toasty_Underconstruction from './Components/Toasty_Underconstruction'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter >
+      <ScrollToTop >
+        <Routes>
+            <Route path ='/' element={<Toasty_Layout />} >
+              <Route index element = {<Toasty_Home />} />
+              <Route path='toasty_underconstruction' element = {<Toasty_Underconstruction />} />
+            </Route>
+          </Routes>
+        </ScrollToTop>
+    </BrowserRouter>
   );
 }
 
