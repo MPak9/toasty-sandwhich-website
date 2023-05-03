@@ -18,17 +18,17 @@ const ToastyHeader = () => {
         {width > 600 ?
             <div className='nav'>
                 <span style = {{padding:'10px 5px', paddingBottom:'0px' }}>
-                    <button className='toasty_filled' style={{padding: '0.5vh 2vw'}} onClick={()=>navigate('/toasty/toasty_underconstruction')}>
+                    <button className='toasty_filled' style={{padding: '0.5vh 2vw'}} onClick={()=>navigate('/toasty_underconstruction')}>
                         Menu
                     </button>
                 </span>
                 <div style = {{padding:'10px 5px', paddingBottom:'0px'  }}>
-                    <button className='toasty_ghost' style={{padding: '0.5vh 2vw'}} onClick={()=>navigate('/toasty/toasty_underconstruction')}>
+                    <button className='toasty_ghost' style={{padding: '0.5vh 2vw'}} onClick={()=>navigate('/toasty_underconstruction')}>
                         Contact
                     </button>
                 </div>
                 <div className='link' style = {{padding:'15px 10px', paddingBottom:'0px' }}
-                    onClick={()=>{navigate(`/toasty/toasty_underconstruction`)}}>
+                    onClick={()=>{navigate(`/toasty_underconstruction`)}}>
                     About
                 </div>
                 <div className='link' style = {{padding:'15px 10px', paddingBottom:'0px'  }}
