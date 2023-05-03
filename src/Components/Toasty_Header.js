@@ -32,7 +32,7 @@ const ToastyHeader = () => {
                     About
                 </div>
                 <div className='link' style = {{padding:'15px 10px', paddingBottom:'0px'  }}
-                    onClick={()=>{navigate(`/toasty`)}}>
+                    onClick={()=>{navigate(`/`)}}>
                     Home
                 </div>
             </div>
