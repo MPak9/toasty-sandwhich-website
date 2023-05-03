@@ -15,7 +15,6 @@ const Toasty_Home = () => {
         <Toasty_Home_Landing/>
         <Toasty_Home_Features />
         <Toasty_Home_SocialProof />
-       
         <div className='toasty_grid_home_owner'>
             <h2 style={{gridRow: '2', gridColumn: '2/ span 5', textAlign:'left', zIndex:'2', marginBottom:'5%'}}>
                 Meet the Owner! Ginny Pasco!
@@ -69,7 +68,7 @@ const Toasty_Home = () => {
                style={{ objectFit:'contain', width:'80%', height:'auto'}}/>
             </div>
             <div style={{ gridRow: '8', gridColumn: '3 / span 4', zIndex:'2', display:'flex', justifyContent:'center'}}>
-                <button className='toasty_filled' style={{alignSelf:'center'}} onClick={()=>navigate('/toasty/toasty_underconstruction')}>
+                <button className='toasty_filled' style={{alignSelf:'center'}} onClick={()=>navigate('/toasty_underconstruction')}>
                     View our Menu
                 </button>
             </div>

@@ -30,7 +30,7 @@ const Toasty_Home_Landing = () => {
                     Simple and satisfying sandwiches made fresh with good toasty bread, and a touch of home.
                 </p>
                 <div style={{ gridColumn: width < 1000 ? '4': '5', gridRow:'5'}}>
-                    <button className='toasty_filled' onClick={()=>navigate('/toasty/toasty_underconstruction')}>
+                    <button className='toasty_filled' onClick={()=>navigate('/toasty_underconstruction')}>
                         View our Menu
                     </button>
                 </div>
