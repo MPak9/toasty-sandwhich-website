@@ -120,6 +120,13 @@
   -webkit-text-stroke: 6px transparent;
 }
 
+h1.stroke_alice {
+  background-color: var(--col-alice);
+  background-clip: text;
+  -webkit-text-fill-color: var(--col-brown);
+  -webkit-text-stroke: 5% transparent;
+}
+
 .toasty .stroke_orange {
   background-color: var(--col-orange);
   background-clip: text;
@@ -211,6 +218,14 @@
   100% {
     transform: translate(0, -0px);
   }
+}
+
+.about_landing_mask {
+  mask-size: 100% auto;
+  -webkit-mask-image: url(https://cdn.discordapp.com/attachments/1075543412582924378/1105186492088844318/about-landing-photo-mask.png);
+  mask-image: url(https://cdn.discordapp.com/attachments/1075543412582924378/1105186492088844318/about-landing-photo-mask.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
 }
 
 /*
@@ -466,3 +481,17 @@
 /*
 ------------------- Toasty Grids----ABOUT
 */
+
+.toasty_grid_about_landing {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 2fr 4fr 1fr;
+  grid-template-rows: 1fr 4fr 1fr 1fr;
+  row-gap: 1fr;
+  height: 80vh;
+}
+
+.toasty_grid_about {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 3fr) 0.5fr minmax(auto, 3fr) 1fr;
+  background-color: aliceblue;
+}

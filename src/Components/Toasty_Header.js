@@ -28,7 +28,7 @@ const ToastyHeader = () => {
                     </button>
                 </div>
                 <div className='link' style = {{padding:'15px 10px', paddingBottom:'0px' }}
-                    onClick={()=>{navigate(`/toasty_underconstruction`)}}>
+                    onClick={()=>{navigate(`/about`)}}>
                     About
                 </div>
                 <div className='link' style = {{padding:'15px 10px', paddingBottom:'0px'  }}

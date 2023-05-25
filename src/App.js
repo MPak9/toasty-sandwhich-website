@@ -4,6 +4,7 @@ import ScrollToTop from './Hooks/ScrollToTop';
 import Toasty_Layout from './Components/Toasty_Layout';
 import Toasty_Home from './Components/Toasty_Home';
 import Toasty_Underconstruction from './Components/Toasty_Underconstruction'
+import Toasty_About from './Components/AboutPage/Toasty_About';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Routes>
             <Route path ='/' element={<Toasty_Layout />} >
               <Route index element = {<Toasty_Home />} />
+              <Route path='about' element = {<Toasty_About />} />
               <Route path='toasty_underconstruction' element = {<Toasty_Underconstruction />} />
             </Route>
           </Routes>
