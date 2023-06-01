@@ -38,7 +38,7 @@ const ToastyHeader = () => {
             </div>
             :
             <div className='nav'>
-                Navigate
+                Menu
             </div>
         }
         

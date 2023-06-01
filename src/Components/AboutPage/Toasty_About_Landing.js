@@ -36,7 +36,7 @@ const Toasty_About_Landing = () => {
         </div>
         
         <div style={{ gridRow:'1 / span 9', gridColumn:'1 / span 8', zIndex:'-4', display:'flex',}}>
-            <img   alt='Background' src='https://cdn.discordapp.com/attachments/1075543412582924378/1105193978430754907/nikita-tikhomirov-mArOwkbUc5E-unsplash.jpg'
+            <img   alt='Background' src='https://cdn.discordapp.com/attachments/1075543412582924378/1113213007917498458/toasty-banner3.jpg'
             style={{ objectFit:'cover', width:'100%', height:'auto'}} />
         </div>
 

@@ -487,11 +487,34 @@ h1.stroke_alice {
   grid-template-columns: 1fr 0.5fr 0.5fr 2fr 4fr 1fr;
   grid-template-rows: 1fr 4fr 1fr 1fr;
   row-gap: 1fr;
-  height: 80vh;
+  height: 50vh;
+}
+@media (min-width: 600px) {
+  .toasty_grid_about_landing {
+    height: 80vh;
+  }
 }
 
 .toasty_grid_about {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: aliceblue;
+}
+@media (min-width: 600px) {
+  .toasty_grid_about {
+    display: grid;
+    padding-left: 5%;
+    padding-right: 5%;
+    grid-template-columns: 1fr minmax(auto, 3fr) 0.5fr minmax(auto, 3fr) 1fr;
+    background-color: aliceblue;
+  }
+}
+
+.about_comment_placement {
   display: grid;
-  grid-template-columns: 1fr minmax(auto, 3fr) 0.5fr minmax(auto, 3fr) 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   background-color: aliceblue;
 }
