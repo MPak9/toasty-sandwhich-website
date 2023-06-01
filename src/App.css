@@ -159,6 +159,11 @@ h1.stroke_alice {
   text-decoration: none;
 }
 
+.toasty .link-alice:hover {
+  color: var(--col-alice);
+  text-decoration: none;
+}
+
 /*
 ----------------Toasty Buttons
 */
@@ -517,4 +522,13 @@ h1.stroke_alice {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   background-color: aliceblue;
+}
+
+/*
+------------------------------TOASTY MOBILE NAV BAR CSS
+*/
+
+.mobile-nav {
+  height: 100vh;
+  background: steelblue;
 }
