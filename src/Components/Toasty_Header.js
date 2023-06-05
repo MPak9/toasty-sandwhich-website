@@ -38,9 +38,9 @@ const ToastyHeader = () => {
             </div>
             :
             <div className='nav'>
-                <div className='link-alice' onClick={()=>{navigate(`/mobile_nav`)}}>
-                    Nav
-                </div>
+                <button className='toasty_filled' style={{padding: '0.5vh 2vw'}} onClick={()=>navigate('/mobile_nav')}>
+                    Menu
+                </button>
             </div>
         }
         

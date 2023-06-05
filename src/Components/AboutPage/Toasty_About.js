@@ -56,7 +56,7 @@ const Toasty_About = () => {
                 <div style={{display:'flex',  gridRow: '1', gridColumn: '2', zIndex:'2', justifyContent: width > 600 ? 'flex-start' : 'center', marginBottom:'30%'}}>
                     <img className='img' alt='Ginny Yu Pasco' 
                     src= 'https://cdn.discordapp.com/attachments/1075543412582924378/1111358833131016243/Half-portrait-Ginny-Gu.jpg'
-                    style={{ objectFit:'cover', width: '80%', height: 'auto' }}
+                    style={{ objectFit:'cover', width: '100%', height: 'auto' }}
                 />
                     
                 </div>

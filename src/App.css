@@ -141,27 +141,36 @@ h1.stroke_alice {
   -webkit-text-stroke: 6px transparent;
 }
 
-.toasty button {
+button {
   font-size: var(--fs-normal);
   font-family: var(--ff-patrick-handsc);
   color: var(--col-brown);
 }
 
-.toasty .link {
-  font-size: var(--fs-normal);
+.link {
+  font-size: var(--fs-header);
   font-family: var(--ff-patrick-handsc);
   color: var(--col-alice);
   text-decoration: none;
 }
 
-.toasty .link:hover {
+.link:hover {
   color: var(--col-orange);
   text-decoration: none;
 }
 
-.toasty .link-alice:hover {
+.link-alice:hover {
   color: var(--col-alice);
   text-decoration: none;
+}
+
+@media (min-width: 600px) {
+  .link {
+    font-size: var(--fs-normal);
+  }
+  .link:hover {
+    font-size: var(--fs-normal);
+  }
 }
 
 /*
@@ -177,6 +186,7 @@ h1.stroke_alice {
   display: inline-block;
   padding: 3% 15%;
 }
+
 .toasty button.toasty_filled:hover {
   color: var(--col-alice);
   text-decoration: none;
@@ -248,7 +258,7 @@ h1.stroke_alice {
 }
 
 /*
--------------------- Toasty Grids----Home
+-------------------- Toasty Grids----header
 */
 .toasty_grid_header {
   display: grid;
@@ -266,6 +276,9 @@ h1.stroke_alice {
   }
 }
 
+/*
+---------------------TOASTY GRIDS - Home
+*/
 .toasty_grid_home_landing {
   display: grid;
   grid-template-columns: 0.5fr 1fr 0.1fr minmax(min-content, 8fr) 0.5fr 0.5fr;
@@ -531,4 +544,17 @@ h1.stroke_alice {
 .mobile-nav {
   height: 100vh;
   background: steelblue;
+}
+
+.mobile-nav-content {
+  justify-content: center;
+  text-align: center;
+  padding: 10%;
+}
+
+.mobile-nav-content button.toasty_filled,
+.mobile-nav-content button.toasty_filled:hover,
+.mobile-nav-content button.toasty_ghost:hover,
+.mobile-nav-content button.toasty_ghost {
+  font-size: var(--fs-header);
 }
