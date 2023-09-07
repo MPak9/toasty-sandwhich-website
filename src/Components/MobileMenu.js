@@ -19,7 +19,7 @@ const MobileMenu = () => {
                 About
             </div>
             <div style = {{padding:'10px 5px', paddingBottom:'0px'  }}>
-                <button className='toasty_filled' style={{padding: '1vh 4vw'}} onClick={()=>navigate('/toasty_underconstruction')}>
+                <button className='toasty_filled' style={{padding: '1vh 4vw'}} onClick={()=>navigate('/menu')}>
                     Menu
                 </button>
             </div>

@@ -7,6 +7,7 @@ import Toasty_Underconstruction from './Components/Toasty_Underconstruction'
 import Toasty_About from './Components/AboutPage/Toasty_About';
 import MobileMenu from './Components/MobileMenu';
 import Contact from './Components/ContactPage/Contact';
+import MenuPage from './Components/MenuPage/MenuPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route index element = {<Toasty_Home />} />
               <Route path='about' element = {<Toasty_About />} />
               <Route path='contact' element={<Contact />} />
+              <Route path='menu' element={<MenuPage />} />
               <Route path='toasty_underconstruction' element = {<Toasty_Underconstruction />} />
               <Route path='mobile_nav' element = {<MobileMenu />} />
             </Route>

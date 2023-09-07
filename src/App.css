@@ -551,6 +551,40 @@ button {
 }
 
 /*
+-----------------------------TOASTY CONTACT PAGE 
+*/
+
+.menu_landing_grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 1fr minmax(auto, 3fr) 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 1fr;
+  height: 80vh;
+}
+
+img.sandwich_of_month {
+  object-fit: contain;
+  width: 80%;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  .menu_landing_grid {
+    height: 100vh;
+  }
+
+  img.sandwich_of_month {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1000px) {
+  img.sandwich_of_month {
+    width: 55%;
+  }
+}
+
+/*
 ------------------------------TOASTY MOBILE NAV BAR CSS
 */
 

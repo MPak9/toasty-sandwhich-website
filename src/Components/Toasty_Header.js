@@ -18,7 +18,7 @@ const ToastyHeader = () => {
         {width > 600 ?
             <div className='nav'>
                 <span style = {{padding:'10px 5px', paddingBottom:'0px' }}>
-                    <button className='toasty_filled' style={{padding: '0.5vh 2vw'}} onClick={()=>navigate('/toasty_underconstruction')}>
+                    <button className='toasty_filled' style={{padding: '0.5vh 2vw'}} onClick={()=>navigate('/menu')}>
                         Menu
                     </button>
                 </span>
