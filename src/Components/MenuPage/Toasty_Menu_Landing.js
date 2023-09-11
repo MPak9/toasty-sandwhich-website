@@ -12,7 +12,7 @@ const Toasty_Menu_Landing = () => {
             {/* Make a wrapper for the Components if you want to style it or place in a grid */}
             <ToastyHeader />
         </div>
-        <div style={{ gridRow: width > minWidth ? '2 / span 2' : '2', gridColumn: width > minWidth ? '2 / span 3' : '2/ span 4', display:'flex', justifyContent:'center'}}>
+        <div style={{ gridRow: width > minWidth ? '2 / span 2' : '2', gridColumn: width > minWidth ? '2 / span 3' : '2/ span 4', display:'flex', justifyContent: width > minWidth ? 'flex-start':'center'}}>
             <h2 style={{alignSelf:'center'}}>
                 Sandwich of the Month
             </h2>

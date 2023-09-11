@@ -568,6 +568,14 @@ img.sandwich_of_month {
   height: auto;
 }
 
+.menu_original_grid {
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 5fr) 1fr;
+  grid-template-rows: 1fr minmax(auto, 5fr) 1fr;
+  row-gap: 1fr;
+  height: 90vh;
+}
+
 @media (min-width: 600px) {
   .menu_landing_grid {
     height: 100vh;

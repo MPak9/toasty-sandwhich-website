@@ -2,6 +2,7 @@ import React from 'react';
 import Toasty_Menu_Landing from './Toasty_Menu_Landing';
 import ToastyFooter from '../Toasty_Footer';
 import useWindowSize from '../../Hooks/useWindowSize';
+import Toasty_Original_Menu from './Toasty_Original_Menu';
 
 const MenuPage = () => {
   const {width} = useWindowSize();
@@ -9,6 +10,7 @@ const MenuPage = () => {
   return (
     <main className='flex-container'>
         <Toasty_Menu_Landing />
+        <Toasty_Original_Menu />
         <ToastyFooter />
     </main>
   )
