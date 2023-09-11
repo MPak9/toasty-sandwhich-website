@@ -573,9 +573,6 @@ img.sandwich_of_month {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
 }
-.menu_item_component_grid > .comment {
-  font-size: var(--fs-normal);
-}
 
 .menu_original_grid {
   display: grid;

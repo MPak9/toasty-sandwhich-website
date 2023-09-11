@@ -19,7 +19,21 @@ const Toasty_Original_Menu = () => {
             }
             
         </div>
-        
+        <div style={{
+            display:'grid',
+            gridTemplateRows:'1fr 0.1fr',
+            gridColumn:'1 / span 7',
+            gridRow: '7/ span 2',
+            marginBottom:'0',
+            zIndex:'-3'
+        }}>
+            <div style={{ display:'flex', flexDirection:'column-reverse', gridColumn:'1' ,gridRow:'1 / span 2', verticalAlign:'bottom'}}>
+                <svg preserveAspectRatio='none' viewBox="0 0 1440 321" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 137.781C744 227.036 673 -47.5946 1440 7.33154V321H0V137.781Z" fill="#F5DEB3"/>
+                </svg>
+            </div>
+            <div style={{ gridColumn:'1', gridRow:'2', backgroundColor:'aliceBlue'}}></div>
+        </div>
         <div style={{ gridRow: '1 / span 8', gridColumn: '1 / span 7', zIndex:'-4', backgroundColor:'aliceBlue'}}></div>
 
     </div>
