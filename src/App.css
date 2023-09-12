@@ -577,9 +577,9 @@ img.sandwich_of_month {
 .menu_original_grid {
   display: grid;
   grid-template-columns: 1fr minmax(auto, 5fr) 1fr;
-  grid-template-rows: 1fr 1fr 1fr minmax(auto, 5fr) 1fr;
+  grid-template-rows: 1fr 1fr 0.5fr minmax(auto, 5fr) 1fr 1fr;
   row-gap: 1fr;
-  height: 90vh;
+  height: 120vh;
 }
 
 @media (min-width: 600px) {
