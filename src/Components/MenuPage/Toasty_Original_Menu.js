@@ -11,7 +11,7 @@ const Toasty_Original_Menu = () => {
   return (
     <div className='menu_original_grid'>
         <h2 style={{ gridRow: '2', gridColumn: '2'}}>
-            Toasty Original Sandwiches
+            Toasty Originals
         </h2>
         <div style={{gridRow:'4', gridColumn:'2', display:'grid', gridTemplateColumns: width > minWidth ? 'repeat(5, 1fr)': 'repeat(3, 1fr)'}}>
             {
