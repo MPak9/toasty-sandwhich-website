@@ -584,10 +584,10 @@ img.sandwich_of_month {
 
 .menu_custom_grid {
   display: grid;
-  grid-template-columns: 1fr 2fr 0.5fr 3fr 1fr;
+  grid-template-columns: 1fr 2fr 0.5fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 0.5fr 1fr minmax(auto, 2fr) 1fr minmax(auto, 3fr) 1fr 1fr;
   row-gap: 1fr;
-  height: 140vh;
+  height: 160vh;
 }
 
 @media (min-width: 600px) {
