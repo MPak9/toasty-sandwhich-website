@@ -100,6 +100,10 @@
   color: var(--col-alice);
 }
 
+.toasty li.normal {
+  color: var(--col-brown);
+}
+
 .toasty .comment {
   font-size: var(--fs-comment);
   font-family: var(--ff-gaegu);
@@ -588,6 +592,10 @@ img.sandwich_of_month {
   grid-template-rows: 1fr 1fr 0.5fr 1fr minmax(auto, 2fr) 1fr minmax(auto, 3fr) 1fr 1fr;
   row-gap: 1fr;
   height: 160vh;
+}
+
+.menu_custom_grid ul {
+  padding: 0 0 0 0;
 }
 
 @media (min-width: 600px) {

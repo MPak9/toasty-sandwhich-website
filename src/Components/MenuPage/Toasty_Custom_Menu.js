@@ -22,18 +22,38 @@ const Toasty_Custom_Menu = () => {
             }
             
         </div>
-        <h3 style={{ gridRow: '5', gridColumn: '2 / span 3'}}>
+        <h3 style={{ gridRow: '5', gridColumn: '2'}}>
             Fillings
         </h3>
+        <ul style={{ gridRow: '6', gridColumn: '2'}}>
+            {
+                original.map((i) => <li className='normal'><span>{i}</span> <span style={{paddingLeft:'5vw'}} >{i}</span></li>)
+            }
+        </ul>
         <h3 style={{ gridRow: '5', gridColumn: '4'}}>
             Toppings
         </h3>
+        <ul style={{ gridRow: '6', gridColumn: '4'}}>
+            {
+                original.map((i) => <li className='normal'><span>{i}</span></li>)
+            }
+        </ul>
         <h3 style={{ gridRow: '5', gridColumn: '5'}}>
             Cheeses
         </h3>
+        <ul style={{ gridRow: '6', gridColumn: '5'}}>
+            {
+                original.map((i) => <li className='normal'><span>{i}</span></li>)
+            }
+        </ul>
         <h3 style={{ gridRow: '5', gridColumn: '6'}}>
             Sauces
         </h3>
+        <ul style={{ gridRow: '6', gridColumn: '6'}}>
+            {
+                original.map((i) => <li className='normal'><span>{i}</span></li>)
+            }
+        </ul>
         <div style={{ gridRow: '1 / span 10', gridColumn: '1 / span 7', zIndex:'-4', backgroundColor:'wheat'}}></div>
     </div>
   )
