@@ -17,6 +17,7 @@
   --col-orange: orange;
   --col-wheat: wheat;
   --col-alice: aliceblue;
+  --col-steel: steelBlue;
 }
 
 /*
@@ -589,9 +590,16 @@ img.sandwich_of_month {
 .menu_custom_grid {
   display: grid;
   grid-template-columns: 1fr 2fr 0.5fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 0.5fr 1fr minmax(auto, 2fr) 1fr minmax(auto, 3fr) 1fr 1fr;
+  grid-template-rows: 2fr 1fr 0.5fr 1fr minmax(auto, 2fr) 0.5fr minmax(
+      auto,
+      3fr
+    ) 1fr 1fr 1fr;
   row-gap: 1fr;
-  height: 160vh;
+  height: 180vh;
+}
+
+.menu_custom_grid h3 {
+  color: var(--col-steel);
 }
 
 .menu_custom_grid ul {
