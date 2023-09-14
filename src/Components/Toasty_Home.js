@@ -68,7 +68,7 @@ const Toasty_Home = () => {
                style={{ objectFit:'contain', width:'80%', height:'auto'}}/>
             </div>
             <div style={{ gridRow: '8', gridColumn: '3 / span 4', zIndex:'2', display:'flex', justifyContent:'center'}}>
-                <button className='toasty_filled' style={{alignSelf:'center'}} onClick={()=>navigate('/toasty_underconstruction')}>
+                <button className='toasty_filled' style={{alignSelf:'center'}} onClick={()=>navigate('/menu')}>
                     View our Menu
                 </button>
             </div>

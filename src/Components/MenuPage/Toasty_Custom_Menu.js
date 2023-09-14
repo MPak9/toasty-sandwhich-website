@@ -1,6 +1,7 @@
 import React from 'react'
 import Toasty_Menu_Item from './Toasty_Menu_Item';
 import useWindowSize from '../../Hooks/useWindowSize'
+import { Breads } from '../../JSON API/Breads';
 
 const Toasty_Custom_Menu = () => {
     const {width} = useWindowSize();
@@ -18,7 +19,7 @@ const Toasty_Custom_Menu = () => {
         </h3>
         <div style={{gridRow:'4', gridColumn:'2 / span 5', display:'grid', gridTemplateColumns: width > minWidth ? 'repeat(5, 1fr)': 'repeat(3, 1fr)'}}>
             {
-                original.map((i) => <Toasty_Menu_Item name={i} price={i} />)
+                Breads.map(({name, price, img}) => <Toasty_Menu_Item name={name} price={price} imgSrc={img} />)
             }
             
         </div>
