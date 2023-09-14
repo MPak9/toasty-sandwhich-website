@@ -2,6 +2,7 @@ import React from 'react'
 import Toasty_Menu_Item from './Toasty_Menu_Item';
 import useWindowSize from '../../Hooks/useWindowSize'
 import { Breads } from '../../JSON API/Breads';
+import { Filling, Topping, Cheeses, Sauces } from '../../JSON API/FIlling';
 
 const Toasty_Custom_Menu = () => {
     const {width} = useWindowSize();
@@ -28,7 +29,7 @@ const Toasty_Custom_Menu = () => {
         </h3>
         <ul style={{ gridRow: '7', gridColumn: width > 600 ? '2' : '2/ span 3'}}>
             {
-                original.map((i) => <li className='normal'><span>{i}</span> <span style={{paddingLeft:'5vw'}} >{i}</span></li>)
+                Filling.map(({name}) => <li className='normal'><span>$1.50</span> <span style={{paddingLeft:'5vw'}} >{name}</span></li>)
             }
         </ul>
         <h3 style={{ gridRow: '6', gridColumn: width > 600 ? '4' : '5'}}>
@@ -36,7 +37,7 @@ const Toasty_Custom_Menu = () => {
         </h3>
         <ul style={{ gridRow: '7', gridColumn: width > 600 ? '4' : '5'}}>
             {
-                original.map((i) => <li className='normal'><span>{i}</span></li>)
+                Topping.map(({name}) => <li className='normal'><span>{name}</span></li>)
             }
         </ul>
         <h3 style={{ gridRow: width > 600 ? '6' : '8', gridColumn: width > 600 ? '5' : '2'}}>
@@ -44,7 +45,7 @@ const Toasty_Custom_Menu = () => {
         </h3>
         <ul style={{ gridRow: width > 600 ? '7' : '9', gridColumn: width > 600 ? '5' : '2'}}>
             {
-                original.map((i) => <li className='normal'><span>{i}</span></li>)
+                Cheeses.map(({name}) => <li className='normal'><span>{name}</span></li>)
             }
         </ul>
         <h3 style={{ gridRow: width > 600 ? '6' : '8', gridColumn: width > 600 ? '6' : '5'}}>
@@ -52,7 +53,7 @@ const Toasty_Custom_Menu = () => {
         </h3>
         <ul style={{ gridRow: width > 600 ? '7' : '9', gridColumn: width > 600 ? '6' : '5'}}>
             {
-                original.map((i) => <li className='normal'><span>{i}</span></li>)
+                Sauces.map(({name}) => <li className='normal'><span>{name}</span></li>)
             }
         </ul>
 

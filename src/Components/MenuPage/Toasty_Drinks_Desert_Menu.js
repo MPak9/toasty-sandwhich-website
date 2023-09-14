@@ -1,5 +1,6 @@
 import React from 'react';
 import useWindowSize from '../../Hooks/useWindowSize';
+import { Drinks, Dessert } from '../../JSON API/Drinks&Deserts';
 
 
 const Toasty_Drinks_Desert_Menu = () => {
@@ -12,17 +13,17 @@ const Toasty_Drinks_Desert_Menu = () => {
         <h2 style={{ gridRow: '2', gridColumn: '2'}}>
             Drinks
         </h2>
-        <ul style={{ gridRow: '3', gridColumn:'2'}}>
+        <ul style={{ gridRow: '3', gridColumn:'2 /span 3'}}>
             {
-                original.map((i) => <li className='normal'><span>{i}</span> <span style={{paddingLeft:'5vw'}} >{i}</span></li>)
+                Drinks.map(({name}) => <li className='normal'><span>$1.50</span> <span style={{paddingLeft:'5vw'}} >{name}</span></li>)
             }
         </ul>
         <h2 style={{ gridRow: '2', gridColumn: width > 600 ? '4' : '5'}}>
             Dessert
         </h2>
-        <ul style={{ gridRow: '3', gridColumn: width > 600 ? '4' : '5'}}>
+        <ul style={{ gridRow: '3', gridColumn: width > 600 ? '4 / span 2' : '5 / span 3'}}>
             {
-                original.map((i) => <li className='normal'><span>{i}</span> <span style={{paddingLeft:'5vw'}} >{i}</span></li>)
+                Dessert.map(({name}) => <li className='normal'><span>$1.50</span> <span style={{paddingLeft:'5vw'}} >{name}</span></li>)
             }
         </ul>
         <div style={{display:'flex', flexDirection:'column-reverse', gridRow: '4 /span 2', gridColumn: '5 / span 2', zIndex:'2'}}>
