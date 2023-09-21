@@ -17,9 +17,6 @@ export const OriginalSandwiches = [
         name:'Salmon & Cream Cheese',
     },
     {
-        name:'Tofu & Sauteed Burdock Sandwiches',
-    },
-    {
         name:'Poached Eggs & Carrot Rapees',
     },
     {
