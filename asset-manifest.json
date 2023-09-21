@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/toasty-sandwhich-website/static/css/main.a134b9ae.css",
-    "main.js": "/toasty-sandwhich-website/static/js/main.25944509.js",
+    "main.css": "/toasty-sandwhich-website/static/css/main.3c562b61.css",
+    "main.js": "/toasty-sandwhich-website/static/js/main.6fe660f5.js",
     "static/js/787.580b0edd.chunk.js": "/toasty-sandwhich-website/static/js/787.580b0edd.chunk.js",
     "index.html": "/toasty-sandwhich-website/index.html",
-    "main.a134b9ae.css.map": "/toasty-sandwhich-website/static/css/main.a134b9ae.css.map",
-    "main.25944509.js.map": "/toasty-sandwhich-website/static/js/main.25944509.js.map",
+    "main.3c562b61.css.map": "/toasty-sandwhich-website/static/css/main.3c562b61.css.map",
+    "main.6fe660f5.js.map": "/toasty-sandwhich-website/static/js/main.6fe660f5.js.map",
     "787.580b0edd.chunk.js.map": "/toasty-sandwhich-website/static/js/787.580b0edd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a134b9ae.css",
-    "static/js/main.25944509.js"
+    "static/css/main.3c562b61.css",
+    "static/js/main.6fe660f5.js"
   ]
 }
