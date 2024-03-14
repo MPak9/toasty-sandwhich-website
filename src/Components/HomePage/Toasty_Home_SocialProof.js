@@ -2,6 +2,10 @@ import React, { useEffect, useState } from 'react'
 import Toasty_SocialProof_Quotes from './Toasty_SocialProof_Quotes '
 import useWindowSize from '../../Hooks/useWindowSize';
 
+import nana from '../../Resources/HOMEPAGE/SocialProof/medium-shot-smiley-man-wearing-trucker-hat.jpg'
+import rumi from '../../Resources/HOMEPAGE/SocialProof/portrait-young-woman-smiling-street.jpg'
+import penny from '../../Resources/HOMEPAGE/SocialProof/portrait-young-student-happy-be-back-university.jpg'
+
 /*
 Toasty Home page social Proof Component block
 */
@@ -12,19 +16,19 @@ const Toasty_Home_Socialproof = () => {
             name:'Nana', 
             job:'Delivery Driver',
             quote:'“Highly Recommend their sandwiches of the day! It tastes personal and fresh like home cooking.” ',
-            imgSrc:'https://cdn.discordapp.com/attachments/1075543412582924378/1084892660810121324/medium-shot-smiley-man-wearing-trucker-hat.jpg'  
+            imgSrc:nana
         },
         {
             name:'Penny',
             job:'Student',
             quote:'“I can always count on Toasty to be tasty and filling, especially when im busy studying.”',
-            imgSrc:'https://cdn.discordapp.com/attachments/1075543412582924378/1084883874800226335/portrait-young-student-happy-be-back-university.jpg'
+            imgSrc: penny
         },
         {
             name:'Rumi',
             job:'Hair Stylist',
             quote:'“When I lack the energy to cook after work, Toasty is the best place to find a good meal to end the day! Their sandwiches are amazing!”',
-            imgSrc:'https://cdn.discordapp.com/attachments/1075543412582924378/1084892456878878800/portrait-young-woman-smiling-street.jpg'
+            imgSrc:rumi
         }
     ]
     const [show, setShow] = useState(false);

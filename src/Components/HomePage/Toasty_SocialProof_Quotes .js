@@ -1,6 +1,8 @@
 import React from 'react'
 import useWindowSize from '../../Hooks/useWindowSize';
 
+import slicedBread from '../../Resources/HOMEPAGE/slicedBread.png'
+
 
 const Toasty_SocialProof_Quotes = ({name, job, quote, imgSrc}) => {
   const {width} = useWindowSize();// decoupling of data
@@ -17,7 +19,7 @@ const Toasty_SocialProof_Quotes = ({name, job, quote, imgSrc}) => {
         <p className='stroke_wheat' style={{gridRow:'3', gridColumn:'2/ span 3', zIndex:'1', textAlign:'center'}}>
             {quote}
         </p> 
-        <img alt='Bread Background' src='https://cdn.discordapp.com/attachments/1075543412582924378/1077664137762582578/slicedBread2.png'
+        <img alt='Bread Background' src={slicedBread}
         style={{objectFit:'cover', alignSelf:'center',width:'100%', height:'auto',gridRow:'1/span 4', gridColumn:'1/ span 5' }}/>
 
     </div>

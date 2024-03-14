@@ -1,5 +1,7 @@
 import React from 'react'
 
+import defaultSandwichofMonth from '../../Resources/chickenKatsuSando.png'
+
 const Toasty_Menu_Item = ({name, price, imgSrc}) => {
   return (
     <div className='menu_item_component_grid'>
@@ -23,5 +25,5 @@ export default Toasty_Menu_Item
 //In the case the neccessary props are undefined, these are the default values
 Toasty_Menu_Item.defaultProps = {
   price:'$1.50',
-  imgSrc:'https://cdn.discordapp.com/attachments/1075543412582924378/1088138105875341453/pngegg_8.png'
+  imgSrc:{defaultSandwichofMonth}
 }

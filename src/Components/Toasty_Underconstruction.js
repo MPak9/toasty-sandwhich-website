@@ -1,6 +1,7 @@
 import React from 'react'
 import ToastyFooter from './Toasty_Footer'
 import ToastyHeader from './Toasty_Header'
+import underconstructionLogo from '../Resources/ToastyLogoFULLOrange.png'
 
 const Toasty_Underconstruction = () => {
   return (
@@ -10,7 +11,7 @@ const Toasty_Underconstruction = () => {
             <h2> Underconstruction</h2>
             <p>Coming soon! Thank you!</p>
             <div style={{display:"flex", justifyContent:'center'}}>
-              <img alt='toasty logo' src='https://cdn.discordapp.com/attachments/1075543412582924378/1088176735754932436/ToastyLogoFULLOrange.png'style={{ objectFit:'cover', width:'5%', height:'auto', minWidth:'50px'}} />
+              <img alt='toasty logo' src={underconstructionLogo} style={{ objectFit:'cover', width:'5%', height:'auto', minWidth:'50px'}} />
             </div>
         </div>
         <ToastyFooter />

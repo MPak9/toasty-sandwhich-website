@@ -2,6 +2,8 @@ import React from 'react';
 import ToastyHeader from '../Toasty_Header';
 import useWindowSize from '../../Hooks/useWindowSize';
 
+import sandwichOfMonth from '../../Resources/chickenKatsuSando.png'
+
 const Toasty_Menu_Landing = () => {
     const {width} = useWindowSize();
     const minWidth = 600;
@@ -25,7 +27,7 @@ const Toasty_Menu_Landing = () => {
             </p>
         </div>
         <div style={{display:'flex', gridRow: width > minWidth ? '3/ span 4': '3/ span 3', gridColumn: width > minWidth ? '2/ span 3' : '2/ span 4', zIndex:'-2', justifyContent:'center'}}>
-               <img className='sandwich_of_month' alt='sandwich' src='https://cdn.discordapp.com/attachments/1075543412582924378/1088138105875341453/pngegg_8.png'/>
+               <img className='sandwich_of_month' alt='sandwich' src={sandwichOfMonth}/>
         </div>
         <div style={{ gridRow: width > minWidth ? '3/ span 4' : '3 /span 3', gridColumn: width > minWidth ? '2 / span 3' : '2/ span 4', zIndex:'1', display:'flex', justifyContent:'center', zIndex:'-3'}}>
             <svg style={{width:'auto', height:'100%', alignSelf: 'center'}} viewBox="0 0 538 518" fill="none" xmlns="http://www.w3.org/2000/svg">

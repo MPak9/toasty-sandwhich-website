@@ -1,6 +1,12 @@
 import React from 'react'
 import useWindowSize from '../../Hooks/useWindowSize';
 
+import glowingWindow from '../../Resources/HOMEPAGE/GlowingWindow.jpg'
+import logoEmptyBrown from '../../Resources/ToastyLogoEmptyBrown.png'
+import clubSandwich from '../../Resources/ClubSandwich.png'
+import backgroundCooking from '../../Resources/HOMEPAGE/backgroundCooking.png'
+import hamCheeseToast from '../../Resources/HOMEPAGE/ham-cheese-toast-blue-towel.jpg'
+
 /*
 This is the block of Toasty Home Features
 */
@@ -13,7 +19,7 @@ const Toast_Home_Features = () => {
                 WELCOME TO TOASTY!
             </div>
             <div className='img' style={{display:'flex',  gridRow: '3 / span 3', gridColumn: '3 / span 4'}}>
-                <img className='img' alt='welcome to Toasty picture' src='https://cdn.discordapp.com/attachments/1075543412582924378/1087534243065905252/clem-onojeghuo-zlABb6Gke24-unsplash_1.jpg' 
+                <img className='img' alt='welcome to Toasty picture' src={glowingWindow} 
                 style={{ objectFit:'cover', width:'100%', height:'auto'}}/>
             </div>
             <p style={width > 700 ? {gridRow: '4', gridColumn: '8 /span 2'} : {gridRow:'6', gridColumn: '3 /span 4'} }>
@@ -21,12 +27,12 @@ const Toast_Home_Features = () => {
             </p>
             {width > 400 ? 
                 <div style={{display:'flex', gridRow: '2 /span 2', gridColumn: '2 /span 2', zIndex:'-1'}}>
-                    <img alt='toasty logo' src='https://cdn.discordapp.com/attachments/1075543412582924378/1075543504589176982/ToastyLogoEmptyBrown.png'style={{ alignSelf:'flex-end', opacity: '0.5', objectFit:'cover', width:'100%', height:'auto', transform: 'rotate(-12deg)' }} ></img>
+                    <img alt='toasty logo' src={logoEmptyBrown} style={{ alignSelf:'flex-end', opacity: '0.5', objectFit:'cover', width:'100%', height:'auto', transform: 'rotate(-12deg)' }} ></img>
                 </div>
                 :''
             }
             <div style={{display:'flex', gridRow: width > 700 ? '5 / span 2' : '7 / span 2', gridColumn: width > 700 ? '6 /span 2' : '4 / span 2', zIndex:'2'}}>
-                <img alt='club sandwich logo' src='https://cdn.discordapp.com/attachments/1075543412582924378/1082335574444228718/pngegg_1.png'
+                <img alt='club sandwich logo' src={clubSandwich}
                 style={{ objectFit:'cover', width:'100%', height:'auto',  transform: 'scaleX(-1)', marginLeft:'30%'}}/>
             </div>
             <div className='comment' style={{textAlign:'center', gridRow: width > 700 ? '5': '7', gridColumn: width > 700 ? '6 /span 4': '4 /span 4'}}>
@@ -58,7 +64,7 @@ const Toast_Home_Features = () => {
                 
             </div>
             <div style={{display:'flex',  gridRow: '4 / span 3', gridColumn: '2 / span 4', zIndex:'-1'}}>
-                <img alt='background cooking' className='img' src='https://cdn.discordapp.com/attachments/1075543412582924378/1087801478032392232/image.png' style={{ objectFit:'cover', width:'100%', height:'auto'}}/>
+                <img alt='background cooking' className='img' src={backgroundCooking} style={{ objectFit:'cover', width:'100%', height:'auto'}}/>
             </div>
             <p style={{ display:'flex', flexDirection:'column', justifyContent:'center', gridRow: '7', gridColumn: width > 700 ? '4 / span 2': '2 / span 3'}}>
                 It’s the orchestra of a meal being prepared for you.
@@ -75,7 +81,7 @@ const Toast_Home_Features = () => {
                 In a short time a simple sandwich is presented before you! Made with good crunchy bread and fresh ingredients! A filling meal to end the day and to regain your energy for the next. 
             </p>
             <div style={{display:'flex',  gridRow: '4 / span 3', gridColumn: width > 700 ? '2 / span 2' : '2/ span 4', zIndex:'-1'}}>
-                <img alt='background-finished ham and cheese toast' className='img' src='https://cdn.discordapp.com/attachments/1075543412582924378/1082378785007075388/ham-cheese-toast-blue-towel.jpg' 
+                <img alt='background-finished ham and cheese toast' className='img' src={hamCheeseToast}
                  style={{ objectFit:'cover', width:'100%', height:'auto'}}/>
             </div>
             <div style={{backgroundColor:'orange', gridColumn:'1 / span 6', gridRow:'1 / span 9', zIndex:'-2'}}></div>

@@ -2,6 +2,8 @@ import React from 'react';
 import useWindowSize from '../../Hooks/useWindowSize';
 import { Drinks, Dessert } from '../../JSON API/Drinks&Deserts';
 
+import clubSandwich from '../../Resources/ClubSandwich.png'
+
 
 const Toasty_Drinks_Desert_Menu = () => {
     const {width} = useWindowSize();
@@ -27,7 +29,7 @@ const Toasty_Drinks_Desert_Menu = () => {
             }
         </ul>
         <div style={{display:'flex', flexDirection:'column-reverse', gridRow: '4 /span 2', gridColumn: '5 / span 2', zIndex:'2'}}>
-            <img alt='club sandwich logo' src='https://cdn.discordapp.com/attachments/1075543412582924378/1082335574444228718/pngegg_1.png'
+            <img alt='club sandwich logo' src={clubSandwich}
             style={{ objectFit:'contain', width:'60%', height:'auto',  transform: 'scaleX(-1)', alignSelf:'center', minWidth:'150px'}}/>
         </div> 
     </div>

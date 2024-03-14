@@ -2,6 +2,9 @@ import React from 'react'
 import ToastyHeader from '../Toasty_Header'
 import useWindowSize from '../../Hooks/useWindowSize'
 import { useNavigate } from 'react-router-dom'
+
+import LandingPageVisual from '../../Resources/HOMEPAGE/top-view-fresh-sandwiches-arrangement-white-background.jpg'
+
 /*
 Toast Home Component for Landing Page
 */
@@ -14,10 +17,11 @@ const Toasty_Home_Landing = () => {
             {
                 ( height > width) && (height - width > 210 ) && (width > 600) ?
                 <h1 className='stroke_alice floating' style={{gridRow:'7', gridColumn:"2/span 6", zIndex:'7'}}>
-                    For a better experience on your device, please rotate if able. Thank you!
+                    For a better experience on your device, please rotate. Thank you!
                 </h1>
                 :''
             }
+
             <div style={{ gridRow: '1', gridColumn: '1 / span 7'}}>
                 {/* Make a wrapper for the Components if you want to style it or place in a grid */}
                 <ToastyHeader />
@@ -68,7 +72,7 @@ const Toasty_Home_Landing = () => {
                     display:'flex',
                 }}
             >
-                <img alt='Table full of sandwiches' src='https://cdn.discordapp.com/attachments/1075543412582924378/1080584657734729828/top-view-fresh-sandwiches-arrangement-white-background.jpg'
+                <img alt='Table full of sandwiches' src={LandingPageVisual}
                 style={{ objectFit:'cover', width:'100%', height:'auto'}}
                 />
             </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import useWindowSize from '../Hooks/useWindowSize';
+import logo from '../Resources/ToastyLogoFULLBrown.png'
 import { Link, useNavigate } from 'react-router-dom';
 
 const ToastyHeader = () => {
@@ -10,7 +11,7 @@ const ToastyHeader = () => {
         <div style={{ backgroundColor:'steelblue', gridColumn:'1/ span 7', gridRow:'1/ span 2',border:'2px solid steelblue'}}></div>
         {width > 600 ?
             <div style={{display:'flex', zIndex:'2', gridColumn:'2', gridRow:'1/ span 3'}}>
-                <img alt='toasty logo' src='https://cdn.discordapp.com/attachments/1075543412582924378/1082414169388765224/ToastyLogoFULLBrown.png'style={{ alignSelf:'flex-start', objectFit:'cover', width:'70%', height:'auto', minWidth:'50px'}} />
+                <img alt='toasty logo' src={logo} style={{ alignSelf:'flex-start', objectFit:'cover', width:'70%', height:'auto', minWidth:'50px'}} />
                 </div>
             :''
         }         

@@ -6,6 +6,12 @@ import Toasty_Home_Landing from './HomePage/Toasty_Home_Landing';
 import Toasty_Home_Features from './HomePage/Toasty_Home_Features';
 import Toasty_Home_SocialProof from './HomePage/Toasty_Home_SocialProof';
 
+import logoEmptyOrange from '../Resources/ToastyLogoEmptyOrange.png';
+import sandwichofMonth from '../Resources/chickenKatsuSando.png';
+import ginnyYu from '../Resources/HOMEPAGE/GinnyYu.jpg';
+import ginnyYuCut from '../Resources/HOMEPAGE/GinntYuCut.jpg';
+import breadSticker from '../Resources/HOMEPAGE/pngegg_3.png';
+
 const Toasty_Home = () => {
     const {width} = useWindowSize();// decoupling of data
     let navigate = useNavigate();
@@ -21,12 +27,10 @@ const Toasty_Home = () => {
             </h2>
             <div style={{display:'flex',  gridRow: width > 600 ? '3/ span 3': '3', gridColumn: width > 600 ? '2/ span 2' : '2 / span 5', zIndex:'1', justifyContent:'center'}}>
                 <img className='img' alt='Ginny Yu Pasco' 
-                src= {width > 600 ?'https://cdn.discordapp.com/attachments/1075543412582924378/1088121862980112505/portrait-smiling-asian-female-barista-wearing-apron-standing-near-counter-with-coffee-working-ginny-yu.jpg'
-                        :
-                        'https://cdn.discordapp.com/attachments/1075543412582924378/1088123235763228722/portrait-smiling-asian-female-barista-wearing-apron-standing-near-counter-with-coffee-working-CUT.jpg'
-                 }
+                src= {width > 600 ? ginnyYu : ginnyYuCut }
                 style={{ objectFit:'cover', width: '100%', height: 'auto' }}
                 />
+                {width > 600 ? console.log("Big") : console.log("Nothing")}
             </div>
             <p style={{gridRow: '4', gridColumn: width > 600 ? '6' : '2/ span 5', textAlign:'left', zIndex:'2'}}>
                 A Bread Expert and Sandwich Enthusiast, Ginny started Toasty to express her love for the craft and also to help those who don’t have the energy or time to cook for themselves. 
@@ -36,7 +40,7 @@ const Toasty_Home = () => {
             </p>
             {   width > 600 ?
                 <div style={{display:'flex',  gridRow: '5/ span 2', gridColumn: '3/ span 2', zIndex:'2', justifyContent:'flex-end'}}>
-                    <img alt='bread sticker' src='https://cdn.discordapp.com/attachments/1075543412582924378/1082780169456074752/pngegg_3.png' 
+                    <img alt='bread sticker' src= {breadSticker}
                     style={{ objectFit:'contain', width:'100%', height:'auto'}} />
                 </div>
                 :''
@@ -60,11 +64,11 @@ const Toasty_Home = () => {
                 Chicken Katsu Sandwich
             </p>
             <div style={{display:'flex', gridRow: '3 / span 4', gridColumn: '3/ span 3', zIndex:'2', justifyContent:'center'}}>
-               <img alt='Toasty Logo' src='https://cdn.discordapp.com/attachments/1075543412582924378/1082774305487720580/ToastyLogoEmptyOrange.png' 
+               <img alt='Toasty Logo' src={logoEmptyOrange} 
                style={{ objectFit:'contain', width:'100%', height:'auto'}}/>
             </div>
             <div style={{display:'flex', gridRow: '5 / span 3', gridColumn: '3/ span 3', zIndex:'3', justifyContent:'flex-end'}}>
-               <img alt='sandwich' src='https://cdn.discordapp.com/attachments/1075543412582924378/1088138105875341453/pngegg_8.png' 
+               <img alt='sandwich' src={sandwichofMonth}
                style={{ objectFit:'contain', width:'80%', height:'auto'}}/>
             </div>
             <div style={{ gridRow: '8', gridColumn: '3 / span 4', zIndex:'2', display:'flex', justifyContent:'center'}}>
