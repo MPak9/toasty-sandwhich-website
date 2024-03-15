@@ -1,17 +1,32 @@
 {
   "files": {
-    "main.css": "/toasty-sandwhich-website/static/css/main.3c562b61.css",
-    "main.js": "/toasty-sandwhich-website/static/js/main.efd3336b.js",
-    "static/js/787.580b0edd.chunk.js": "/toasty-sandwhich-website/static/js/787.580b0edd.chunk.js",
+    "main.css": "/toasty-sandwhich-website/static/css/main.a544e3b2.css",
+    "main.js": "/toasty-sandwhich-website/static/js/main.26666ebd.js",
+    "static/js/787.fcd61005.chunk.js": "/toasty-sandwhich-website/static/js/787.fcd61005.chunk.js",
+    "static/media/backgroundCooking.png": "/toasty-sandwhich-website/static/media/backgroundCooking.16ac6391e1200fcfcc1e.png",
+    "static/media/top-view-fresh-sandwiches-arrangement-white-background.jpg": "/toasty-sandwhich-website/static/media/top-view-fresh-sandwiches-arrangement-white-background.458a65ff2623f1d9a3a8.jpg",
+    "static/media/ham-cheese-toast-blue-towel.jpg": "/toasty-sandwhich-website/static/media/ham-cheese-toast-blue-towel.29175cc252cfe62e124f.jpg",
+    "static/media/chickenKatsuSando.png": "/toasty-sandwhich-website/static/media/chickenKatsuSando.3351bb49ec166960ac1f.png",
+    "static/media/slicedBread.png": "/toasty-sandwhich-website/static/media/slicedBread.d274ac5028e4b40e8aaf.png",
+    "static/media/ClubSandwich.png": "/toasty-sandwhich-website/static/media/ClubSandwich.7799815ce7518a82925e.png",
+    "static/media/GlowingWindow.jpg": "/toasty-sandwhich-website/static/media/GlowingWindow.b74830937d0ebaa08605.jpg",
+    "static/media/pngegg_3.png": "/toasty-sandwhich-website/static/media/pngegg_3.1e3a2361aabb686eaa80.png",
+    "static/media/GinnyYu.jpg": "/toasty-sandwhich-website/static/media/GinnyYu.9786e39f8fc2d5b81e99.jpg",
+    "static/media/portrait-young-student-happy-be-back-university.jpg": "/toasty-sandwhich-website/static/media/portrait-young-student-happy-be-back-university.f693377d38cd6ae6348a.jpg",
+    "static/media/portrait-young-woman-smiling-street.jpg": "/toasty-sandwhich-website/static/media/portrait-young-woman-smiling-street.6786a077558c73a668ac.jpg",
+    "static/media/GinntYuCut.jpg": "/toasty-sandwhich-website/static/media/GinntYuCut.f95f23815e7676ad81c5.jpg",
+    "static/media/medium-shot-smiley-man-wearing-trucker-hat.jpg": "/toasty-sandwhich-website/static/media/medium-shot-smiley-man-wearing-trucker-hat.991fabd7d50be2181478.jpg",
     "static/media/ToastyLogoFULLOrange.png": "/toasty-sandwhich-website/static/media/ToastyLogoFULLOrange.e836c8ec4f24dd9a56c6.png",
+    "static/media/ToastyLogoEmptyOrange.png": "/toasty-sandwhich-website/static/media/ToastyLogoEmptyOrange.95973705dfc048ba3329.png",
     "static/media/ToastyLogoFULLBrown.png": "/toasty-sandwhich-website/static/media/ToastyLogoFULLBrown.313b415e9032332820a0.png",
+    "static/media/ToastyLogoEmptyBrown.png": "/toasty-sandwhich-website/static/media/ToastyLogoEmptyBrown.75882618824340cc6d2a.png",
     "index.html": "/toasty-sandwhich-website/index.html",
-    "main.3c562b61.css.map": "/toasty-sandwhich-website/static/css/main.3c562b61.css.map",
-    "main.efd3336b.js.map": "/toasty-sandwhich-website/static/js/main.efd3336b.js.map",
-    "787.580b0edd.chunk.js.map": "/toasty-sandwhich-website/static/js/787.580b0edd.chunk.js.map"
+    "main.a544e3b2.css.map": "/toasty-sandwhich-website/static/css/main.a544e3b2.css.map",
+    "main.26666ebd.js.map": "/toasty-sandwhich-website/static/js/main.26666ebd.js.map",
+    "787.fcd61005.chunk.js.map": "/toasty-sandwhich-website/static/js/787.fcd61005.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c562b61.css",
-    "static/js/main.efd3336b.js"
+    "static/css/main.a544e3b2.css",
+    "static/js/main.26666ebd.js"
   ]
 }
