@@ -17,12 +17,11 @@ function App() {
         <Routes>
             <Route path ='/' element={<Toasty_Layout />} >
               <Route index element = {<Toasty_Home />} />
-
-              {/*<Route path='about' element = {<Toasty_About />} />
+              <Route path='about' element = {<Toasty_About />} />
               <Route path='contact' element={<Contact />} />
+              {/*
               <Route path='menu' element={<MenuPage />} /> */}
-              <Route path='about' element = {<Toasty_Underconstruction />} />
-              <Route path='contact' element={<Toasty_Underconstruction />} />
+              
               <Route path='menu' element={<Toasty_Underconstruction />} />
 
               <Route path='toasty_underconstruction' element = {<Toasty_Underconstruction />} />

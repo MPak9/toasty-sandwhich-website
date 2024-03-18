@@ -5,6 +5,10 @@ import ToastyHeader from '../Toasty_Header';
 import Toasty_About_Landing from './Toasty_About_Landing';
 import ToastyFooter from '../Toasty_Footer';
 
+import plateOfToast from '../../Resources/ABOUT/cut_out_cheese-vegetable-toast.png'
+import laughingImg from '../../Resources/ABOUT/ginny-yu-laughing-close-up.jpg'
+import halfPortrait from '../../Resources/ABOUT/Half-portrait-Ginny-Yu.jpg'
+
 const Toasty_About = () => {
     const {width} = useWindowSize();// decoupling of data
     let navigate = useNavigate();
@@ -25,10 +29,10 @@ const Toasty_About = () => {
                     A Word from Ginny Pasco
                 </h2>
                 <p style={{gridRow:'2', gridColumn:'4', marginBottom:'10%', alignSelf:'center'}}>
-                    “Toasty initially started as a way of expressing my passion for bread. I love sandwiches, and I wanted to use Toasty to share this love with other people but while this idea was baking in my head, I realized something even more important.
+                    “Toasty initially started as a way of expressing my passion for bread. I love sandwiches, and I wanted to use Toasty to share this love with other people but while this idea was cooking in my head, I realized something even more important.
                 </p>
                 <div style={{display:'flex',  gridRow: '2', gridColumn: '2', zIndex:'2', justifyContent: width > 600 ? 'flex-start': 'center'}}>
-                    <img alt='Photo of tasty toast' src='https://cdn.discordapp.com/attachments/1075543412582924378/1111354557109391470/cut_out_cheese-vegetable-toast.png' 
+                    <img alt='Photo of tasty toast' src={plateOfToast}
                     style={{ objectFit:'contain', width: width > 600 ? '90%' : '70%', height:'auto'}} />
                     
                 </div>
@@ -40,7 +44,7 @@ const Toasty_About = () => {
                 </p>
                 <div className='about_comment_placement' style={{gridRow: '1', gridColumn: '3 / span 2', display:'grid', marginBottom:'15%'}}>
                     <div style={{display:'flex',  gridRow: '1 / span 5', gridColumn: width > 600 ? '2 / span 4' : '1 / span 5', zIndex:'2', justifyContent: width > 600 ? 'flex-end' : 'center'}}>
-                        <img className='img' alt='She laughs' src='https://cdn.discordapp.com/attachments/1075543412582924378/1111361985456656435/ginny-yu-laughing-close-up.jpg' 
+                        <img className='img' alt='She laughs' src={laughingImg}
                         style={{ objectFit:'contain', width: '90%', height:'auto'}} />
                     </div>
                     <div className='comment stroke_alice' style={{gridRow: '5', gridColumn: '1 / span 2', justifyContent:'center', alignSelf:'center', transform: 'rotate(-15deg)'}}>
@@ -55,7 +59,7 @@ const Toasty_About = () => {
                 </p>
                 <div style={{display:'flex',  gridRow: '1', gridColumn: '2', zIndex:'2', justifyContent: width > 600 ? 'flex-start' : 'center', marginBottom:'30%'}}>
                     <img className='img' alt='Ginny Yu Pasco' 
-                    src= 'https://cdn.discordapp.com/attachments/1075543412582924378/1111358833131016243/Half-portrait-Ginny-Gu.jpg'
+                    src= {halfPortrait}
                     style={{ objectFit:'cover', width: '100%', height: 'auto' }}
                 />
                     

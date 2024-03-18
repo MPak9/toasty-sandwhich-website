@@ -2,6 +2,9 @@ import React from 'react'
 import useWindowSize from '../../Hooks/useWindowSize'
 import ToastyHeader from '../Toasty_Header';
 
+import ToastyLogo from '../../Resources/ABOUT/ToastyLogoBlue_Stroke.png'
+import banner from '../../Resources/ABOUT/toasty-About-banner.jpg'
+
 
 const Toasty_About_Landing = () => {
     const {width} = useWindowSize();// decoupling of data
@@ -13,7 +16,7 @@ const Toasty_About_Landing = () => {
             <ToastyHeader />
         </div>
         <div style={{display:'flex', gridRow: '3/ span 2', gridColumn: '2/ span 2', justifyContent:'center', transform: 'rotate(-12deg)', zIndex:'-2'}}>
-            <img alt='Toasty Logo' src='https://cdn.discordapp.com/attachments/1075543412582924378/1105200469065875516/ToastyLogoFULLABLUE_STROKE_ALICE.png' 
+            <img alt='Toasty Logo' src= {ToastyLogo}
         style={{ objectFit:'contain', width:'100%', minWidth:'300px', height:'auto'}}/>
         </div>
         <h1  className='stroke_alice' style={{gridRow:'4',gridColumn:'3 / span 4'}}>
@@ -36,7 +39,7 @@ const Toasty_About_Landing = () => {
         </div>
         
         <div style={{ gridRow:'1 / span 9', gridColumn:'1 / span 8', zIndex:'-4', display:'flex',}}>
-            <img   alt='Background' src='https://cdn.discordapp.com/attachments/1075543412582924378/1113213007917498458/toasty-banner3.jpg'
+            <img   alt='Background' src={banner}
             style={{ objectFit:'cover', width:'100%', height:'auto'}} />
         </div>
 
