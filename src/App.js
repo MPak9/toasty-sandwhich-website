@@ -19,11 +19,7 @@ function App() {
               <Route index element = {<Toasty_Home />} />
               <Route path='about' element = {<Toasty_About />} />
               <Route path='contact' element={<Contact />} />
-              {/*
-              <Route path='menu' element={<MenuPage />} /> */}
-              
-              <Route path='menu' element={<Toasty_Underconstruction />} />
-
+              <Route path='menu' element={<MenuPage />} />
               <Route path='toasty_underconstruction' element = {<Toasty_Underconstruction />} />
               <Route path='mobile_nav' element = {<MobileMenu />} />
             </Route>

@@ -25,5 +25,5 @@ export default Toasty_Menu_Item
 //In the case the neccessary props are undefined, these are the default values
 Toasty_Menu_Item.defaultProps = {
   price:'$1.50',
-  imgSrc:{defaultSandwichofMonth}
+  imgSrc: defaultSandwichofMonth
 }
